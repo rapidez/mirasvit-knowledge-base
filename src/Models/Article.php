@@ -13,6 +13,6 @@ class Article extends Model
 
     protected static function booted()
     {
-        static::addGlobalScope(new IsActiveScope);
+        static::addGlobalScope(new IsActiveScope());
     }
 }

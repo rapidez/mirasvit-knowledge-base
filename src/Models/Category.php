@@ -2,10 +2,8 @@
 
 namespace Rapidez\MirasvitKnowledgeBase\Models;
 
-use Illuminate\Database\Eloquent\Builder;
 use Rapidez\Core\Models\Model;
 use Rapidez\Core\Models\Scopes\IsActiveScope;
-use Rapidez\MirasvitKnowledgeBase\Models\Article;
 
 class Category extends Model
 {
@@ -15,7 +13,7 @@ class Category extends Model
 
     protected static function booted()
     {
-        static::addGlobalScope(new IsActiveScope);
+        static::addGlobalScope(new IsActiveScope());
     }
 
     public function subCategories()
