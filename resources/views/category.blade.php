@@ -6,7 +6,7 @@
 @section('content')
     <div class="container mx-auto mb-5 px-3 sm:px-0">
         <div class="prose prose-green max-w-none">
-            {!! $category->description !!}
+            @content($category->description)
         </div>
         <div class="sm:grid sm:gap-3 md:gap-5 sm:grid-cols-2 md:grid-cols-3">
             @foreach($categories as $category)

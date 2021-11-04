@@ -7,7 +7,7 @@
     <div class="container mx-auto mb-5 px-3 sm:px-0">
         <div class="prose prose-green max-w-none">
             <h1>{{ $article->name }}</h1>
-            {!! $article->text !!}
+            @content($article->text)
         </div>
     </div>
 @endsection

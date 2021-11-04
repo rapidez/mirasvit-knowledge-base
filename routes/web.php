@@ -24,6 +24,7 @@ Route::get($prefix.'/{slug}', function ($slug) {
 
     if ($rewrite->type == 'ARTICLE') {
         $article = Article::findOrFail($rewrite->entity_id);
+
         return view('mirasvitknowledgebase::article', compact('article'));
     }
 
@@ -36,5 +37,6 @@ Route::get($prefix, function () {
         ->orderBy('position')
         ->where('parent_id', $category->category_id)
         ->get();
+
     return view('mirasvitknowledgebase::category', compact('category', 'categories'));
 });
