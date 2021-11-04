@@ -15,4 +15,9 @@ class Article extends Model
     {
         static::addGlobalScope(new IsActiveScope);
     }
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'mst_kb_article_category', 'ac_article_id', 'ac_category_id');
+    }
 }
