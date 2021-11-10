@@ -5,9 +5,9 @@
 
 @section('content')
     <div class="container mx-auto mb-5 px-3 sm:px-0">
-        <div class="prose prose-green max-w-none">
+        <article class="prose prose-green max-w-none">
             <h1>{{ $article->name }}</h1>
             @content($article->text)
-        </div>
+        </article>
     </div>
 @endsection
