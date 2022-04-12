@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Rapidez\Core\RapidezFacade as Rapidez;
+use Rapidez\Core\Facades\Rapidez;
 use Rapidez\MirasvitKnowledgeBase\Models\Article;
 use Rapidez\MirasvitKnowledgeBase\Models\Category;
 use Rapidez\MirasvitKnowledgeBase\Models\Rewrite;
