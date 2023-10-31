@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/mirasvit-knowledge-base/compare/0.3.2...master)
+[Unreleased changes](https://github.com/rapidez/mirasvit-knowledge-base/compare/0.4.0...master)
+## [0.4.0](https://github.com/rapidez/mirasvit-knowledge-base/releases/tag/0.4.0) - 2023-10-31
+
+### Added
+
+- Rapidez v1 support (#4)
+
 ## [0.3.2](https://github.com/rapidez/mirasvit-knowledge-base/releases/tag/0.3.2) - 2023-07-04
 
 ### Fixed
