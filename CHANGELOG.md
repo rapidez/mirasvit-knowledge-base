@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/mirasvit-knowledge-base/compare/0.4.0...master)
+[Unreleased changes](https://github.com/rapidez/mirasvit-knowledge-base/compare/2.0.0...master)
+## [2.0.0](https://github.com/rapidez/mirasvit-knowledge-base/releases/tag/2.0.0) - 2024-09-13
+
+### Added
+
+- Rapidez v2 and Laravel 11 compatibility (#5)
+
 ## [0.4.0](https://github.com/rapidez/mirasvit-knowledge-base/releases/tag/0.4.0) - 2023-10-31
 
 ### Added
