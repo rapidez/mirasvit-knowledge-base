@@ -6,7 +6,13 @@ use Rapidez\MirasvitKnowledgeBase\Models\Article;
 use Rapidez\MirasvitKnowledgeBase\Models\Category;
 use Rapidez\MirasvitKnowledgeBase\Models\Rewrite;
 
-Route::middleware('web')->prefix(Rapidez::config('kb/general/base_url', 'knowledge-base'))->group(function () {
+try {
+    $prefix = Rapidez::config('kb/general/base_url', 'knowledge-base');
+} catch (\Exception $e) {
+    $prefix = 'knowledge-base';
+}
+
+Route::middleware('web')->prefix($prefix)->group(function () {
     Route::get('/{slug}', function ($slug) {
         $rewrite = Rewrite::where('url_key', $slug)->firstOrFail();
 
